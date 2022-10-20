@@ -1,0 +1,57 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 2000% 2000%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+    color: #000000;
+    font-family: "Inter", Sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.font-weight-bold {
+	font-weight: 700 !important;
+}
+
+.divider {
+  border-top: 4px solid #000;
+}
+
+#arrow {
+    animation: slideInDown 0.5s infinite;
+    animation-direction: alternate-reverse;
+}
+
+.title-element {
+    color: #000000;
+    font-family: "Inter", Sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+}
+
+.bg-black {
+	background-color: #000000;
+}
+
+.section-logo {
+    background-color: #BFC7D3;
+    padding: 3rem 0;
+}
+.section-padding {
+	padding: 4rem 0;
+}
