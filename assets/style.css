@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 	background-size: 2000% 2000%;
 	animation: gradient 15s ease infinite;
 }
-@keyframes gradient {
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -18,7 +19,7 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 
 .title {
     color: #000000;
@@ -62,7 +63,193 @@ body {
 }
 
 
-/* New code */
+
+/* Program Section */
+
+ .paneles-container {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .panel-info {
+            padding: 0;
+            z-index: 20;
+        }
+
+        .panel-cuerpo {
+            background-color: #09A491;
+            padding: 2rem 1rem 2rem 1rem;
+            z-index: 10;
+            color: #F9FF00 !important;
+            border: 0.2rem solid black;
+            border-radius: 1rem;
+            box-shadow: -10px 5px 1px black;
+        }
+
+		.titulo-panel {
+			color: #F9FF00 !important;
+			font-size: 1.1rem;
+		}
+		
+		.panel-cuerpo-streaming {
+			background-color: #584897 !important;
+		}
+/* 		.titulo-panel-streaming {
+			color:#F9FF00 !important;
+		} */
+		.panel_hora-streaming, .titulo-panel-streaming, .charla-streaming {
+			background-color: #584897 !important;
+		}
+/* 		.charla_streaming-titulo {
+			color: #E2FFDF !important;
+		} */
+		.charla-streaming {
+			display:flex;
+			align-items: center !important;
+			justify-content: center !important;
+			padding: 0.4rem;
+		}
+		.twitch-logo {
+			align-self: center !important;
+			justify-content: center !important;
+			margin-top: -4px !important;
+		}
+		
+		.hora {
+			color: #F9FF00 !important;
+		}
+		
+        .panel_charla {
+            background-color: #E1EE39;
+            width: 12rem;
+            border: 0.2rem solid black;
+            margin-top: -10px;
+            border-radius: 0.5rem;
+            box-shadow: -3px 3px 1px black;
+            padding-top: 0.4rem;
+        }
+
+        .panel_hora {
+            background-color: #09A491;
+            color: #F9FF00;
+            border: 0.2rem solid black;
+            border-radius: 0.2rem;
+            padding-top: 0.4rem;
+        }
+
+        .panel_bajada {
+            background-color: #E2FFDF;
+            color: black;
+            width: 11rem !important;
+            border-radius: 0.5rem !important;
+            border: 0.2rem solid black;
+            position: relative !important;
+            z-index: 50 !important;
+            margin-top: -3em !important;
+            left: 0 !important;
+            margin-left: 14rem !important;
+            padding-top: 0.7rem !important;
+        }
+
+        .panel_bajada h6 {
+            line-height: 1rem !important;
+        }
+
+        .charla_titulo {
+            font-weight: 700;
+        }
+
+        .programa {
+            /* The image used */
+            background-image: url("img/bg_programa.jpg");
+            background-size: cover;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 5rem 0;
+            background-color: #E2FFDF;
+        }
+
+        .programa_titulo {
+            width: 14rem;
+        }
+
+        #diamante {
+            width: 2rem;
+            z-index: 40 !important;
+            position: relative;
+            margin-top: -1.5em;
+        }
+
+        .p1 {
+            fill: #dddf48 !important;
+            stroke: #030202 !important;
+            stroke-miterlimit: 10 !important;
+            stroke-width: 4px !important;
+        }
+
+
+
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .panel_bajada {
+            margin-left: 11rem !important;
+            }
+            #diamante {
+                margin-right: 3rem !important;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .panel_bajada {
+            margin-left: 8rem !important;
+            }
+            #diamante {
+                margin-right: 4.5rem !important;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width:991px) {
+            .panel_bajada {
+                margin-left: 10rem !important; 
+            }
+            #diamante {
+                margin-right: 4rem !important;
+            }
+        }
+
+        @media (min-width: 446px) and (max-width: 767px) {
+            .panel_bajada {
+                margin-left: 15.7rem !important;
+            }
+            #diamante {
+                margin-right: 6rem !important;
+            }
+        }
+
+        @media (max-width: 445px) {
+            .panel_bajada {
+                margin-left: 10rem !important;
+            }
+            #diamante {
+                margin-right: 7rem !important;
+            }
+        }
+
+
+        /* @media (max-width: 800px) {
+            .programa {
+                background-image: url("http://futuristaschile.cl/wp-content/uploads/2022/11/bg_programa_mobile.jpg") !important;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        } */
+
+
+
+/* Videos Section */
 
 .pre-footer{
     position: relative;
@@ -70,7 +257,7 @@ body {
 
 .videos-section {
     width: 100%;
-    background-color: #DBFF29;
+    background-color: #E1EE39;
 }
 
   .v-container {
@@ -78,7 +265,7 @@ body {
     height: 325px;
 }
 
-video, .iframe {
+  .iframe {
     border: 10px solid #07bdff;
     border-radius: 16px;
     box-shadow: 1px black;
@@ -141,7 +328,6 @@ video, .iframe {
     left: 80px;
     z-index: 3;
     transition:all 0.3s !important;
-    /* transform: translate(0%, -5.0732%) translate3d(0px, 0px, 0px);  */
 } 
     
 .v-item4:hover {
@@ -152,10 +338,6 @@ video, .iframe {
     z-index: 5;
 }
 
-.ytp-large-play-button-red-bg {
-    background-color: #07bdff !important;
-
-}
 
 /* Universe SVG */
 
@@ -180,7 +362,7 @@ video, .iframe {
     top:0;
     right: -300px;
     /* transform: translateX(25rem); */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .universe-container-two {
@@ -189,7 +371,7 @@ video, .iframe {
     left: -240px;
     /* transform: translateX(25rem);
     flex-wrap: nowrap; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main-universe-two {
@@ -342,8 +524,6 @@ video, .iframe {
             overflow: hidden;
         }
 }
-
-
 
 @media (min-width: 480px) and (max-width: 767px) {
     .iframe {
