@@ -70,6 +70,148 @@
           opacity: 1;
         }
       }
+              .logo-hero {
+            width: 45em;
+        }
+
+        .logo-chico {
+            width: 6rem;
+        }
+
+        .main-hero {
+            padding: 12rem 1rem;
+            background-image: url("assets/img/bg_hero.jpg");
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .instrucciones {
+            background-color: #E2FFE0;
+        }
+
+        .instrucciones-mobile {
+            background-color: #E2FFE0;
+            padding: 3rem 1rem;
+        }
+
+        .intro {
+            background-color: #3DA471;
+            padding: 8rem 0;
+        }
+
+        .boton-rojo {
+            width: 100%;
+        }
+
+        .boton-instruccion {
+            margin-right: 1rem;
+            width: 3rem;
+        }
+
+        .logo-instruccion {
+            width: 5rem;
+        }
+
+        /* (A) FIXED WRAPPER */
+        .hwrap {
+            overflow: hidden;
+            /* HIDE SCROLL BAR */
+            background: #E2FFE0;
+        }
+
+        /* (B) MOVING TICKER WRAPPER */
+        .hmove {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+        .hitem {
+            flex-shrink: 0;
+            width: 60%;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .estrellas2 {
+            top: -25rem;
+        }
+
+        /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+        /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+        @keyframes tickerh {
+            0% {
+                transform: translate3d(150%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-200%, 0, 0);
+            }
+        }
+
+        .hmove {
+            animation: tickerh linear 40s infinite;
+        }
+
+        .hmove:hover {
+            animation-play-state: paused;
+        }
+
+        @media (max-width: 765px) {
+            .boton-instruccion {
+                width: 2rem;
+            }
+
+            .instruccion {
+                display: block;
+            }
+
+            .logo-instruccion {
+                width: 4rem;
+            }
+
+            span {
+                display: block
+            }
+
+            .main-hero {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .boton-rojo {
+                width: 5rem;
+            }
+
+            .logo-chico {
+                width: 6rem;
+            }
+
+            .instrucciones {
+                display: none;
+            }
+
+            .intro {
+                padding: 4rem 0;
+            }
+
+            .main-hero {
+                padding: 4rem 0;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .main-hero {
+                background-image: url("assets/img/bg_hero_mobile.jpg") !important;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
     </style>
   </head>
 
@@ -99,70 +241,166 @@
         </div>-->
       </div>
     </nav>
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8 text-center">
-            <img src="assets/img/Logo_futuristas_350x261.png" class="img-fluid" alt="">
-          </div>
+    <section class="main-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="logo-container">
+                        <img class="img-fluid logo-hero mb-5" src="assets/img/logo_main-hero.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="title-container mb-5">
+                        <div class="title">
+                            <h1>MODO COOPERATIVO</h1>
+                        </div>
+                        <div class="title">
+                            <h2>OBSERVA . EMOCIÓNATE . EXPERIMENTA</h2>
+                        </div>
+                    </div>
+                    <div class="logos-container row mb-5">
+                        <div class="col-4"><img class="logo-chico" src="assets/img/logo_fef.png" alt=""></div>
+                        <div class="col-4"><img class="logo-chico" src="assets/img/CF_logo.png" alt=""></div>
+                        <div class="col-4"><img class="logo-chico" src="assets/img/senado_logo.png" alt=""></div>
+                    </div>
+                    <div class="row d-flex justify-content-start align-items-center">
+                        <div class="col-12 col-md-2">
+                            <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 248.017 254.908" class="boton-rojo">
+                                <defs>
+                                    <style>
+                                        .cls-1,
+                                        .cls-2,
+                                        .cls-3 {
+                                            stroke: #000;
+                                            stroke-miterlimit: 10;
+                                        }
+
+                                        .cls-1,
+                                        .cls-2 {
+                                            stroke-width: 4px;
+                                        }
+
+                                        .cls-2 {
+                                            fill: #ea5b62;
+                                        }
+
+                                        .cls-3 {
+                                            fill: #a02a35;
+                                            stroke-width: 3.885px;
+                                        }
+                                    </style>
+                                </defs>
+                                <circle class="cls-1 boton-rojo-1" cx="117.259" cy="137.649" r="115.259" />
+                                <circle class="cls-2 boton-rojo-2" cx="127.034" cy="124.14" r="115.259" />
+                                <path class="cls-1"
+                                    d="M229.687,146.328c0-44.623-41.494-111.465-86.117-111.465-14.688,0-13.266-12.4-25.134-5.551-8.4,4.848-40.846,37.287-46.988,44.72a80.8,80.8,0,0,0,109.678,116.9C201.385,176.254,229.687,146.328,229.687,146.328Z"
+                                    transform="translate(-6.463 -7.286)" />
+                                <path class="cls-3"
+                                    d="M91.408,192.808a78.5,78.5,0,0,0,89.617-1.653c19.676-14.258,47.162-43.321,47.162-43.321,0-24.717-26.644-8.369-45.947-31.077Z"
+                                    transform="translate(-6.463 -7.286)" />
+                                <circle class="cls-2 boton-rojo-3" cx="165.218" cy="82.798" r="80.798" />
+                            </svg>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <h5>PRESS START</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="row mt-5 justify-content-center">
-          <div class="col-8 text-center">
-            <img src="assets/img/modo_cooperativo.png" class="img-fluid" alt="">
-          </div>
-        </div>
-        <div class="row mt-5 justify-content-center">
-          <div class="col-10 text-center">
-            <p class="title">
-              18 DE NOVIEMBRE ________ 09:00 HRS
-            </p>
-          </div>
-        </div>
-        <div class="row mt-5 justify-content-center">
-          <div class="col-10 text-center">
-            <p class="title">
-              MIM MUSEO INTERACTIVO MIRADOR
-              <a href="https://www.google.com/maps/place/Museo+Interactivo+Mirador+(MIM)/@-33.5194822,-70.611972,15z/data=!4m2!3m1!1s0x0:0x4e84cc2277ad807f?sa=X&amp;ved=2ahUKEwjxuJbIjs_6AhUQupUCHRaKBTMQ_BJ6BAh3EAU" target="_blank">
-                <img width="24" height="34" src="https://futuristaschile.cl/wp-content/uploads/2022/10/ubic.png" class="attachment-large size-large" alt="" loading="lazy">
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-6 text-center">
-            <img src="assets/img/Group-4.png">
-          </div>
-          <div class="col-6 text-center">
-            <img src="assets/img/Group-1-3.png">
-          </div>
-        </div>
-        <div class="row mt-5 justify-content-center">
-          <div class="col-8 text-center">
-            <img src="assets/img/Group-1-2.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
+
     </section>
 
-    <section class="section-padding mt-5 justify-content-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="assets/img/ojo-300x300.png" width="100">
-            <h2 class="title-element">OBSERVA</h2>
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="assets/img/corazon-300x300.png" width="100">
-            <h2 class="title-element">EMOCIÓNATE</h2>
-          </div>
-          <div class="col-lg-4 col-sm-12 text-center">
-            <img src="assets/img/Mano-300x300.png" width="100">
-            <h2 class="title-element">EXPERIMENTA</h2>
-          </div>
+
+        <div class="hwrap">
+            <div class="hmove">
+                <div class="hitem">
+                    <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonA.svg"
+                            alt=""><span>SIGUE NUESTRA
+                            TRANSMISIÓN VÍA STREAMING</span></div>
+                </div>
+                <div class="hitem">
+                    <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonB.svg"
+                            alt=""><span>INGRESA A <img class="logo-instruccion"
+                                src="assets/img/minecraft-instruccion.png" alt="">
+                            Y VIVE LA EXPERIENCIA <b>FUTURISTAS</b></span></div>
+                </div>
+                <div class="hitem">
+                    <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonC.svg"
+                            alt=""><span>SIGUE LA TRANSMISIÓN CON
+                            CONTENIDO ESPECIAL VÍA <img class="logo-instruccion" src="assets/img/twitch_instruccion.png"
+                                alt=""> EN <b>@futuristas_chile</b></span></div>
+                </div>
+                <div class="hitem">
+                    <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonD.svg"
+                            alt=""><span>PARTICIPA Y DESCUBRE EL
+                            <b>MODO COOPERATIVO</b></span></div>
+                </div>
+            </div>
+
         </div>
-      </div>
     </section>
 
+
+    <section class="instrucciones-mobile d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonA.svg"
+                                alt=""><span>SIGUE NUESTRA
+                                TRANSMISIÓN VÍA STREAMING</span></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonB.svg"
+                                alt=""><span>INGRESA A <img class="logo-instruccion"
+                                    src="assets/img/minecraft-instruccion.png" alt="">
+                                Y VIVE LA EXPERIENCIA <b>FUTURISTAS</b></span></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonC.svg"
+                                alt=""><span>SIGUE LA TRANSMISIÓN CON
+                                CONTENIDO ESPECIAL VÍA <img class="logo-instruccion"
+                                    src="assets/img/twitch_instruccion.png" alt=""> EN <b>@futuristas_chile</b></span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonD.svg"
+                                alt=""><span>PARTICIPA Y DESCUBRE EL
+                                <b>MODO COOPERATIVO</b></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="row justify-content-between mb-5">
+                <div class="col-6">
+                    <h2>UN ESPACIO
+                        PARA SOÑAR, EXPERIMENTAR,
+                        REIR Y APRENDER</h2>
+                </div>
+                <div class="col-4"><img class="estrellas1" src="assets/img/estrellas2.png" alt=""></div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-4"><img class="estrellas1" src="assets/img/estrellas1.png" alt=""></div>
+                <div class="col-6">
+                    <p>Futuristas es una oportunidad para que niñas y niños, sus familias y la comunidad educativa
+                        compartan en torno a la ciencia y el conocimiento, incentivando nuevas reflexiones e impulsando
+                        la curiosidad. Aquí podrás explorar diferentes maneras de aprender, imaginar nuevos mundos y
+                        conectarte con tus pares en un espacio único y entretenido.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="programa">
@@ -613,7 +851,7 @@
         </div>
 
     </section>
-    <section class="section-padding partners mt-5 justify-content-center ">
+    <section class="section-padding mt-5 justify-content-center">
       <div class="container px-4 px-lg-5 h-100 text-center pre-footer">
         <h1>ORGANIZA</h1>
         <div class="row align-items-center h-100">
