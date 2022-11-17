@@ -135,6 +135,10 @@ h2,
     font-weight: 600;
 }
 
+.bg-social {
+    color: #E2FFDF;
+}
+
 .font-weight-bold {
 	font-weight: 700 !important;
 }
@@ -369,6 +373,12 @@ h2,
 .charlas-p-title {
     font-size: 66px;
     line-height: 78%;
+}
+
+.social-p-title {
+    font-size: 2rem;
+    line-height: 78%;
+    color: black;
 }
 
 .videos-section {
