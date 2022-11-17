@@ -96,8 +96,6 @@ h3 {
     font-weight: normal;
 }
 
-h1,
-h2, 
 .fef-text {
     font-family: "Upheavtt", "Montserrat";
 }
@@ -109,9 +107,17 @@ h2,
     font-weight: 600;
 }
 
+@media (min-width: 1200px) {
+    .title-yellow, h1 {
+        font-size: 5.5rem !important;
+        color: #E1EE39;
+        font-family: "Upheavtt", Sans-serif, "Montserrat";
+        line-height: 4rem;
+    }
+}
 .title-yellow {
     color: #E1EE39;
-    font-family: "Fieldwork", Sans-serif, "Montserrat";
+    font-family: "Upheavtt", Sans-serif, "Montserrat";
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -130,7 +136,7 @@ h2,
 
 .title-limon {
     color: #E2FFDF;
-    font-family: "Fieldwork", Sans-serif, "Montserrat";
+    font-family: "Upheavtt", Sans-serif, "Montserrat";
     font-size: 1.3rem;
     font-weight: 600;
 }
