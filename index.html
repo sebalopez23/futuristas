@@ -6,212 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Futuristas</title>
-    <style>
-      .kOiaxz {
-        animation-direction: reverse;
-        margin: 0px auto;
-        width: calc(3136px);
-      }
-      .bVCyls {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 32px auto;
-        width: calc(3584px);
-      }
-      .fgTpI {
-          background: #584897;
-          border: 4px solid rgb(0 0 0);
-          border-radius: 8px;
-          box-shadow: rgb(0 8 36 / 5%) 0px 8px 16px;
-          display: flex;
-          flex-direction: column;
-          height: 104px;
-          -webkit-box-pack: justify;
-          justify-content: space-between;
-          margin-right: 32px;
-          padding: 1rem;
-          width: 192px;
-      }
-      .container .slider {
-        animation: slidein 20s linear infinite;
-        white-space: nowrap;
-      }
-      .container .slider .logos {
-        width: 100%;
-        display: inline-block;
-        margin: 0px 10rem;
-      }
-      .container .slider .logos .fab {
-        width: calc(100% / 6);
-        animation: fade-in 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-      }
-
-      @keyframes slidein {
-        from {
-          transform: translate3d(0, 0, 0);
-        }
-        to {
-          transform: translate3d(-100%, 0, 0);
-        }
-      }
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      .logo-hero {
-            width: 45em;
-        }
-
-        .logo-chico {
-            width: 6rem;
-        }
-
-        .main-hero {
-            padding: 12rem 1rem;
-            background-image: url("assets/img/bg_hero.jpg");
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .instrucciones {
-            background-color: #E2FFE0;
-        }
-
-        .instrucciones-mobile {
-            background-color: #E2FFE0;
-            padding: 3rem 1rem;
-        }
-
-        .intro {
-            background-color: #3DA471;
-            padding: 8rem 0;
-        }
-
-        .boton-rojo {
-            width: 100%;
-        }
-
-        .boton-instruccion {
-            margin-right: 1rem;
-            width: 3rem;
-        }
-
-        .logo-instruccion {
-            width: 5rem;
-        }
-
-        /* (A) FIXED WRAPPER */
-        .hwrap {
-            overflow: hidden;
-            /* HIDE SCROLL BAR */
-            background: #E2FFE0;
-        }
-
-        /* (B) MOVING TICKER WRAPPER */
-        .hmove {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
-        .hitem {
-            flex-shrink: 0;
-            width: 60%;
-            box-sizing: border-box;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .estrellas2 {
-            top: -25rem;
-        }
-
-        /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
-        /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
-        @keyframes tickerh {
-            0% {
-                transform: translate3d(150%, 0, 0);
-            }
-
-            100% {
-                transform: translate3d(-200%, 0, 0);
-            }
-        }
-
-        .hmove {
-            animation: tickerh linear 40s infinite;
-        }
-
-        .hmove:hover {
-            animation-play-state: paused;
-        }
-
-        @media (max-width: 765px) {
-            .boton-instruccion {
-                width: 2rem;
-            }
-
-            .instruccion {
-                display: block;
-            }
-
-            .logo-instruccion {
-                width: 4rem;
-            }
-
-            span {
-                display: block
-            }
-
-            .main-hero {
-                text-align: center;
-                justify-content: center;
-            }
-
-            .boton-rojo {
-                width: 5rem;
-            }
-
-            .logo-chico {
-                width: 6rem;
-            }
-
-            .instrucciones {
-                display: none;
-            }
-
-            .intro {
-                padding: 4rem 0;
-            }
-
-            .main-hero {
-                padding: 4rem 0;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .main-hero {
-                background-image: url("assets/img/bg_hero_mobile.jpg") !important;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-    </style>
   </head>
 
   <body>
@@ -250,10 +48,10 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="title-container mb-5">
-                        <div class="title">
+                        <div class="title-yellow">
                             <h1>MODO COOPERATIVO</h1>
                         </div>
-                        <div class="title">
+                        <div class="title-limon">
                             <h2>OBSERVA . EMOCIÓNATE . EXPERIMENTA</h2>
                         </div>
                     </div>
@@ -302,7 +100,7 @@
                             </svg>
                         </div>
                         <div class="col-12 col-md-10">
-                            <h5>PRESS START</h5>
+                            <h5 class="title-limon">PRESS START</h5>
                         </div>
                     </div>
                 </div>
@@ -317,24 +115,24 @@
             <div class="hmove">
                 <div class="hitem">
                     <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonA.svg"
-                            alt=""><span>SIGUE NUESTRA
+                            alt=""><span class="span-inst">SIGUE NUESTRA
                             TRANSMISIÓN VÍA STREAMING</span></div>
                 </div>
                 <div class="hitem">
                     <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonB.svg"
-                            alt=""><span>INGRESA A <img class="logo-instruccion"
+                            alt=""><span class="span-inst">INGRESA A <img class="logo-instruccion"
                                 src="assets/img/minecraft-instruccion.png" alt="">
                             Y VIVE LA EXPERIENCIA <b>FUTURISTAS</b></span></div>
                 </div>
                 <div class="hitem">
                     <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonC.svg"
-                            alt=""><span>SIGUE LA TRANSMISIÓN CON
+                            alt=""><span class="span-inst">SIGUE LA TRANSMISIÓN CON
                             CONTENIDO ESPECIAL VÍA <img class="logo-instruccion" src="assets/img/twitch_instruccion.png"
                                 alt=""> EN <b>@futuristas_chile</b></span></div>
                 </div>
                 <div class="hitem">
                     <div class="instruccion"><img class="boton-instruccion" src="assets/img/botonD.svg"
-                            alt=""><span>PARTICIPA Y DESCUBRE EL
+                            alt=""><span class="span-inst">PARTICIPA Y DESCUBRE EL
                             <b>MODO COOPERATIVO</b></span></div>
                 </div>
             </div>
@@ -381,17 +179,17 @@
     <section class="intro">
         <div class="container">
             <div class="row justify-content-between mb-5">
-                <div class="col-6">
-                    <h2>UN ESPACIO
-                        PARA SOÑAR, EXPERIMENTAR,
-                        REIR Y APRENDER</h2>
+                <div class="col-8">
+                    <h2 class="h2-yellow">UN ESPACIO <br>
+                        PARA <b> SOÑAR, <br> EXPERIMENTAR, <br>
+                        REIR Y APRENDER </b></h2>
                 </div>
                 <div class="col-4"><img class="estrellas1" src="assets/img/estrellas2.png" alt=""></div>
             </div>
             <div class="row justify-content-between">
                 <div class="col-4"><img class="estrellas1" src="assets/img/estrellas1.png" alt=""></div>
                 <div class="col-6">
-                    <p>Futuristas es una oportunidad para que niñas y niños, sus familias y la comunidad educativa
+                    <p class="p-yellow">Futuristas es una oportunidad para que niñas y niños, sus familias y la comunidad educativa
                         compartan en torno a la ciencia y el conocimiento, incentivando nuevas reflexiones e impulsando
                         la curiosidad. Aquí podrás explorar diferentes maneras de aprender, imaginar nuevos mundos y
                         conectarte con tus pares en un espacio único y entretenido.
@@ -852,7 +650,7 @@
     </section>
     <section class="section-padding mt-5 justify-content-center" style="background-color: #09A491;">
       <div class="container px-4 px-lg-5 h-100 text-center">
-        <h1>ORGANIZA</h1>
+        <h1 class="text-white">ORGANIZA</h1>
         <div class="row align-items-center h-100">
           <div class="container rounded">
             <div class="slider">
@@ -905,7 +703,7 @@
             </div>
           </div>
         </div>
-        <h1>CON EL APOYO DE</h1>
+        <h1 class="text-white">CON EL APOYO DE</h1>
         <div class="row align-items-center h-100">
           <div class="container rounded">
             <div class="slider">

@@ -97,13 +97,39 @@ h3 {
 }
 
 h1,
-H2, 
+h2, 
 .fef-text {
     font-family: "Upheavtt", "Montserrat";
 }
 
 .title {
     color: #000000;
+    font-family: "Fieldwork", Sans-serif, "Montserrat";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.title-yellow {
+    color: #E1EE39;
+    font-family: "Fieldwork", Sans-serif, "Montserrat";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.h2-yellow {
+    font-size: 3.5rem;
+    color: #E1EE39;
+    font-family: "Fieldwork", Sans-serif, "Montserrat";
+
+}
+.p-yellow {
+    color: #E1EE39;
+    font-family: "Fieldwork", Sans-serif, "Montserrat";
+    font-size: 1.2rem;
+}
+
+.title-limon {
+    color: #E2FFDF;
     font-family: "Fieldwork", Sans-serif, "Montserrat";
     font-size: 1.3rem;
     font-weight: 600;
@@ -731,4 +757,204 @@ H2,
            margin: 5px;
            }
 
+        }
+      .kOiaxz {
+        animation-direction: reverse;
+        margin: 0px auto;
+        width: calc(3136px);
+      }
+      .bVCyls {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 32px auto;
+        width: calc(3584px);
+      }
+      .fgTpI {
+          background: #584897;
+          border: 4px solid rgb(0 0 0);
+          border-radius: 8px;
+          box-shadow: rgb(0 8 36 / 5%) 0px 8px 16px;
+          display: flex;
+          flex-direction: column;
+          height: 104px;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          margin-right: 32px;
+          padding: 1rem;
+          width: 192px;
+      }
+      .container .slider {
+        animation: slidein 20s linear infinite;
+        white-space: nowrap;
+      }
+      .container .slider .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 10rem;
+      }
+      .container .slider .logos .fab {
+        width: calc(100% / 6);
+        animation: fade-in 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+
+      @keyframes slidein {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(-100%, 0, 0);
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .logo-hero {
+            width: 45em;
+        }
+
+        .logo-chico {
+            width: 6rem;
+        }
+
+        .main-hero {
+            padding: 12rem 1rem;
+            background-image: url(../assets/img/bg_hero.jpg);
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .instrucciones {
+            background-color: #E2FFE0;
+        }
+
+        .instrucciones-mobile {
+            background-color: #E2FFE0;
+            padding: 3rem 1rem;
+        }
+
+        .intro {
+            background-color: #3DA471;
+            padding: 8rem 0;
+        }
+
+        .boton-rojo {
+            width: 100%;
+        }
+
+        .boton-instruccion {
+            margin-right: 1rem;
+            width: 3rem;
+        }
+
+        .logo-instruccion {
+            width: 5rem;
+        }
+
+        /* (A) FIXED WRAPPER */
+        .hwrap {
+            overflow: hidden;
+            /* HIDE SCROLL BAR */
+            background: #E2FFE0;
+        }
+        .span-inst {
+            font-family: "Fieldwork", Sans-serif, "Montserrat";
+        }
+
+        /* (B) MOVING TICKER WRAPPER */
+        .hmove {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+        .hitem {
+            flex-shrink: 0;
+            width: 60%;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .estrellas2 {
+            top: -25rem;
+        }
+
+        /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+        /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+        @keyframes tickerh {
+            0% {
+                transform: translate3d(150%, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-200%, 0, 0);
+            }
+        }
+
+        .hmove {
+            animation: tickerh linear 40s infinite;
+        }
+
+        .hmove:hover {
+            animation-play-state: paused;
+        }
+
+        @media (max-width: 765px) {
+            .boton-instruccion {
+                width: 2rem;
+            }
+
+            .instruccion {
+                display: block;
+            }
+
+            .logo-instruccion {
+                width: 4rem;
+            }
+
+            span {
+                display: block
+            }
+
+            .main-hero {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .boton-rojo {
+                width: 5rem;
+            }
+
+            .logo-chico {
+                width: 6rem;
+            }
+
+            .instrucciones {
+                display: none;
+            }
+
+            .intro {
+                padding: 4rem 0;
+            }
+
+            .main-hero {
+                padding: 4rem 0;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .main-hero {
+                background-image: url(../assets/img/bg_hero_mobile.jpg) !important;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
         }
