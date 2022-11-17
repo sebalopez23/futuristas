@@ -920,6 +920,7 @@ h2,
         @media (max-width: 765px) {
             .boton-instruccion {
                 width: 2rem;
+                margin-bottom: 1rem;
             }
 
             .instruccion {
@@ -957,6 +958,12 @@ h2,
 
             .main-hero {
                 padding: 4rem 0;
+            }
+            .h2-yellow {
+                font-size: 2rem;
+                color: #E1EE39;
+                font-family: "Fieldwork", Sans-serif, "Montserrat";
+
             }
         }
 
