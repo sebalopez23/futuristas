@@ -110,6 +110,22 @@ h2,
     font-family: "Upheavtt", "Montserrat";
 }
 
+
+/* Hero section */
+/* Aplicado a senado de Hero */
+
+/* .logo-mas-chico {
+    width: 66%;
+ } */
+
+  .logo-b {
+    width: 70%;
+ } 
+ 
+ /* .logo-chico {
+     width: 100%;
+  } */
+  
 .title {
     color: #000000;
     font-family: "Fieldwork", Sans-serif, "Montserrat";
@@ -389,10 +405,10 @@ h2,
     background-color: #E1EE39;
 }
 
-.v-container {
+/* .v-container {
     width: 570px;
     height: 325px;
-}
+} */
 
 .iframe {
     border: 10px solid #07bdff;
@@ -604,10 +620,10 @@ h2,
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .iframe {
+    /* .iframe {
         width: 475px;
         height: 250px;
-    }
+    } */
 
     .v-item1 {
         right: 16px;
@@ -673,10 +689,10 @@ h2,
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-    .iframe {
+    /* .iframe {
         width: 460px;
         height: 250px;
-    }
+    } */
 
     .v-item1,
     .v-item2,
@@ -707,10 +723,10 @@ h2,
 }
 
 @media (max-width: 480px) {
-    .iframe {
+    /* .iframe {
         width: 340px;
         height: 220px;
-    }
+    } */
 
     .v-item1,
     .v-item2,
